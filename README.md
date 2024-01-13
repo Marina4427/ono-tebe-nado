@@ -1,2 +1,1 @@
-Добрый день!
-Спасибо за проверку моего проекта!
+https://github.com/Marina4427/ono-tebe-nado.git
