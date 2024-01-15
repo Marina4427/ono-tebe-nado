@@ -1,6 +1,4 @@
-a {
-  text-decoration: none;
-}
+
 
 .header {
   color: #000;
@@ -17,18 +15,18 @@ a {
   gap: 33px;
 }
 
-.grid_header {
+.header__grid {
   display: grid;
   grid-template-columns: 1fr 140px 1fr;
   align-items: center;
 }
 
-.grid__logo {
+.header__grid-logo {
   margin-top: 7px;
   padding-left: 5px;
 }
 
-.header__menu {
+.header__grid-menu {
   letter-spacing: 0.1px;
   margin-top: 7px;
 }
@@ -39,9 +37,12 @@ a {
   line-height: 135%;
   align-items: start;
   font-size: 18px;
+  font-style: normal;
+  margin-top: 6px;
+
 }
 
-.grid_header .address {
+.header__grid .address {
   padding-left: 194px;
   margin-top: 6px;
 }
@@ -53,9 +54,10 @@ a {
 
 .header__menu-item_active {
   border: none;
+  list-style: none;
 }
 
-.email, .phone {
+.address_link {
   white-space: nowrap;
   border-bottom: 1px solid #000;
   line-height: 125%;
@@ -66,7 +68,7 @@ a {
   text-transform: uppercase;
   background-image: url("../images/cover.jpg");
   background-repeat: no-repeat;
-  background-size: 125%;
+  background-size: cover;
   background-position: center;
 }
 
@@ -79,38 +81,37 @@ a {
   padding: 163px 0 0 0;
 }
 
-.accent__span {
+.cover__accent_span {
   font-size: 100px;
   font-weight: 700;
   text-transform: uppercase;
   display: block;
-  padding-left: 48px;
-  padding-right: 50px;
-  padding-bottom: 9px;
+  padding: 0 22px 3px 48px;
 }
 
-.accent__span.text-right {
+.cover__accent_span.text-right {
   padding-right: 22px;
   padding-bottom: 0px;
 }
 
-.accent__span.text-center {
+.cover__accent_span.text-center {
  padding-bottom: 2px;
 }
 
-.indent_30 {
+.cover__indent_30 {
   letter-spacing: 30px;
 }
 
-.indent_60 {
+.cover__indent_60 {
   letter-spacing: 60px;
 }
 
-.text-center {
-    text-align: center;
+.cover__text-center {
+  padding-left: 333px;
+  padding-top: 6px;
 }
 
-.text-right {
+.cover__text-right {
     text-align: right;
 }
 
@@ -118,10 +119,11 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  justify-content: space-evenly;
 }
 
 .cover__description-text {
-  padding: 0 0 61px 78px;
+  padding: 0 0 62px 44px;
   font-size: 20px;
   font-weight: 400;
   line-height: 150%;
@@ -134,9 +136,13 @@ a {
   font-weight: 500;
   border: 1px solid #fff;
   background-color: transparent;
-  margin: 128px 52px 51px 0px;
+  margin: 124px 20px 52px 48px;
+  padding: 12px 32px 11px 30px;
+  color: #FFF;
+  font-family: 'Raleway';
   text-decoration: none;
-  padding: 11px 33px 12px 30px;
+  text-transform: uppercase;
+
 }
 
 .lots {
@@ -170,7 +176,7 @@ a {
   width: 334px;
   height: 563px;
   background-position: center;
-  background-size: 161%;
+  background-size: cover;
   position: relative;
 }
 
@@ -227,13 +233,19 @@ a {
   justify-items: center;
 }
 
+.about__card {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}
+
 .about__title {
   color: #000;
   font-size: 40px;
   font-weight: 700;
   text-transform: uppercase;
   margin-top: 133px;
-  margin-bottom: 99px ;
+  margin-bottom: 76px;
 }
 
 .about__text {
@@ -241,8 +253,8 @@ a {
   font-size: 20px;
   font-weight: 400;
   line-height: 120%;
-  margin-bottom: 25px;
-  padding-right: 28px;
+  padding-right: 23px;
+  letter-spacing: 0.1px;
 }
 
 .about__logo {
@@ -261,19 +273,18 @@ a {
   height: 112px;
   width: 146px;
   position: relative;
-  top: 64px;
-  left: 48px;
+  margin: 64px 0 0 48px;
 }
 
-.space__letter {
-  letter-spacing: 0.1px;
-}
+
 
 .footer {
-  margin: 157px 52px 88px 50px;
+  margin: 175px 53px 88px 48px;
   display: flex;
   justify-content: space-between;
 }
+
+
 
 .footer__social-item {
   width: 48px;
@@ -285,14 +296,26 @@ a {
   justify-content: space-between;
   list-style: none;
   gap: 48px;
+  padding-top: 3px;
 }
 
-.footer .adress {
+.footer .address {
   padding-left: 0;
 }
 
 .footer__menu {
   font-size: 18px;
+  padding-top: 5px
+}
+
+.footer__menu-link {
+
+  border-bottom: 1px solid #000;
+  line-height: 110%;
+}
+
+.footer__menu-item_active {
+  border: none;
 }
 
 .footer__menu-list {
@@ -302,3 +325,4 @@ a {
   align-items: center;
   margin-left: 37px;
 }
+
